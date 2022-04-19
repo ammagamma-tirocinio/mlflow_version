@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/Salvatore/Desktop/mlflow_version/mlruns/0/359ae1fa0c10468faa9cf317b858471b/artifacts
+end_time: 1650399838709
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 359ae1fa0c10468faa9cf317b858471b
+run_uuid: 359ae1fa0c10468faa9cf317b858471b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1650399825030
+status: 3
+tags: []
+user_id: sadamicis
