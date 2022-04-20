@@ -33,7 +33,7 @@ if __name__ == "__main__":
     #data = pd.read_csv("data/wine-quality.csv")
 
     url=dvc.api.get_url(path = "5d/6f24258e3c50bb01a61194b5401f5d",
-    repo= "https://drive.google.com/drive/folders/1bCqwhWxELWjp_jSjdb7bgvoHwwOMPBxy"
+    repo= "gdrive://1zihfkN8N68e13rZNOMoJxYrFwjmT9Ryw/remote"
     )
     data = pd.read_csv(url)
     # Split the data into training and test sets. (0.75, 0.25) split.
