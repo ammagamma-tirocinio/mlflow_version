@@ -32,7 +32,7 @@ if __name__ == "__main__":
     # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
     #data = pd.read_csv("data/wine-quality.csv")
 
-    url=dvc.api.get_url(path = "5d/6f24258e3c50bb01a61194b5401f5d",
+    url=dvc.api.read(path = "5d/6f24258e3c50bb01a61194b5401f5d",
     repo= "gdrive://1zihfkN8N68e13rZNOMoJxYrFwjmT9Ryw/remote"
     )
     data = pd.read_csv(url)
