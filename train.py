@@ -14,6 +14,7 @@ from sklearn.linear_model import ElasticNet
 
 import mlflow
 import mlflow.sklearn
+import dvc.api
 
 
 def eval_metrics(actual, pred):
@@ -29,9 +30,12 @@ if __name__ == "__main__":
     np.random.seed(40)
 
     # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
-    
-    data = pd.read_csv("data/wine-quality.csv")
+    #data = pd.read_csv("data/wine-quality.csv")
 
+    url=dvc.api.get_url(path = "5d/6f24258e3c50bb01a61194b5401f5d",
+    repo= "https://drive.google.com/drive/folders/1bCqwhWxELWjp_jSjdb7bgvoHwwOMPBxy"
+    )
+    data = pd.read_csv(url)
     # Split the data into training and test sets. (0.75, 0.25) split.
     train, test = train_test_split(data)
 
